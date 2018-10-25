@@ -1,0 +1,1709 @@
+@import "mixins";
+@import "variables";
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#navi {
+  width: 100%;
+  margin: 0 auto;
+
+  nav {
+    padding: 0;
+    margin: 0;
+    background: $deepblue;
+    display: flex;
+    justify-content: space-around;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+    }
+
+    ul.title {
+      flex: 1 1 0;
+    }
+
+    .title {
+      max-width: 380px;
+    }
+
+    ul.sources {
+      flex: 1 1 0;
+    }
+    .sources {
+      max-width: 610px;
+    }
+    li {
+      flex: 1 1 0;
+      text-transform: uppercase;
+    }
+    span.wapik_phone {
+      background: url(../images/phone_logo.png) no-repeat center left 5%;
+      text-decoration: none;
+      text-align: center;
+      color: $offWhite;
+      display: block;
+      padding: 10px;
+      font-family: $usableFont;
+    }
+    a.wapik_logo {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 7.5px;
+      border-right: 1px solid $offGray;
+      font-family: $usableFont;
+    }
+    a {
+      text-decoration: none;
+      text-align: center;
+      color: $offWhite;
+      display: block;
+      padding: 10px;
+      font-family: $usableFont;
+      &:hover {
+        background: lighten($deepblue, 5);
+        border-radius: 2px;
+      }
+    }
+  }
+
+}// end of #navi
+
+
+
+
+.lead-banner {
+  @include banner;
+}
+
+#features {
+  display: flex;
+  justify-content: center;
+  div.heading {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-family: $usableFont;
+    color: $buttonColor;
+    margin-top: 4%;
+  }
+  .markup {
+    width: 11%;
+    margin-top: 1%;
+    margin-left: 46.2%;
+    height: 1px;
+    background: $buttonColor;
+  }
+  span.description {
+    margin-top: 2%;
+    font-family: $usableFont;
+    color: $deepblue;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+  }
+  span.postDescription {
+    font-family: $usableFont;
+    color: $deepblue;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+#features_icons {
+  margin-top: 5%;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    padding: 0;
+    margin: 4%;
+    list-style-type: none;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  a {
+    margin-top: 1%;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: $deepblue;
+    font-family: $usableFont;
+    font-weight: bold;
+    &:hover {
+      color: complement($deepblue);
+    }
+  }
+  span {
+    margin-top: 1%;
+    font-weight: normal;
+    font-family: $usableFont;
+    color: $deepblue;
+  }
+}
+//end of #features_icons
+
+
+
+#opportunityes_icons {
+  display: flex;
+  justify-content: space-between;
+    ul {
+      text-align: left;
+      margin: 6%;
+    }
+    margin-top: 10%;
+    li {
+      margin: 2%;
+      list-style-type: none;
+    }
+
+    a.moto {
+      margin-top: 1%;
+      padding-left: 1%;
+      position: absolute;
+      text-decoration: none;
+      font-family: $usableFont;
+      color: $deepblue;
+      font-weight: bold;
+      &:hover {
+        color: complement($deepblue);
+      }
+    }
+    span.description{
+      font-family: $usableFont;
+      color: $deepblue;
+      font-size: 15px;
+      display: block;
+
+    }
+}// end of #opportunityes_icons
+
+
+#gray_content {
+  background: $offGray;
+#usability {
+  padding-top: 3%;
+  .heading {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-family: $usableFont;
+    color: $buttonColor;
+  }
+  .markup {
+    display: block;
+    width: 5.5%;
+    margin-top: 1%;
+    margin-left: 48%;
+    height: 1px;
+    background: $buttonColor;
+  }
+  .description {
+    margin-top: 2%;
+    font-family: $usableFont;
+    color: $deepblue;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+  }
+ }
+}//end of gray_content;
+
+  #for_phone {
+    display: flex;
+    #phone_description {
+      display: flex;
+      background: $offGray;
+    .for_image {
+      width: 100%;
+      height: auto;
+      img .phone{
+
+      }
+    }
+    #pointer {
+      margin-top: 10%;
+      text-align: left;
+      ul {
+        list-style-type: none;
+
+        li {
+          display: flex;
+          align-items: center;
+          .heading {
+            text-align: center;
+            display: block;
+            font-size: 30px;
+            font-family: $usableFont;
+            color: $buttonColor;
+          }
+          .description {
+            margin-top: 2%;
+            font-family: $usableFont;
+            color: $deepblue;
+          }
+          .description1 {
+            margin-top: 5%;
+            font-family: $usableFont;
+            color: $deepblue;
+          }
+        }
+      }
+    }
+  }
+}// end of #for_phone;
+
+
+
+
+#valeria {
+  margin-top: 15%;
+  #valeria_words {
+  display: flex;
+  justify-content: space-between;
+
+ #valeria_info {
+   max-width: 500px;
+   margin-left: 10%;
+  span.valeria_description {
+    color: $deepblue;
+    font-size: 20px;
+    font-family: $usableFont;
+    text-align: left;
+    display: block;
+  }
+  span.valeria_name {
+    color: $buttonColor;
+    font-family: $usableFont;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  span.description {
+      color: $deepblue;
+      font-family: $usableFont;
+      font-size: 15px;
+  }
+}
+  #valeria_photo {
+
+    img {
+      margin-left: 20%;
+      text-align: right;
+      border-radius: 50%;
+      width: 50%;
+       }
+     }
+   }
+}//end of #valeria
+
+
+
+
+#planet {
+  padding-bottom: 10%;
+  margin-top: 10%;
+  padding-left: 10%;
+  background-color: $offGray;
+
+  #planet_description {
+    display: flex;
+
+
+    #details {
+      margin-top: 10%;
+      .heading {
+        text-align: left;
+        display: block;
+        font-size: 30px;
+        font-family: $usableFont;
+        color: $buttonColor;
+      }
+      .description {
+        font-family: $usableFont;
+        color: $deepblue;
+      }
+      }
+    #earth_picture {
+      img {
+        margin-top: 20%;
+        width: 100%;
+        align-items: flex-end;
+      }
+  }
+ }
+
+}//end of #planet
+
+  #pricing {
+    margin-top: 7%;
+    #pricing_head {
+    .heading .plan {
+      font-size: 30px;
+      display: block;
+      text-align: center;
+      font-family: $usableFont;
+      color: $buttonColor;
+
+    }
+    .markup {
+      width: 5.5%;
+      margin-top: 1%;
+      margin-left: 47.9%;
+      height: 1px;
+      background: $buttonColor;
+      display: block;
+    }
+     .description .subdescription{
+      display: block;
+      text-align: center;
+      font-family: $usableFont;
+      color: $deepblue;
+      font-size: 20px;
+      margin-top: 1%;
+    }
+    }
+    #for_table {
+      display: flex;
+      justify-content: center;
+      margin-top: 5%;
+      table {
+        padding-bottom: 2%;
+        padding-top: 1%;
+        border: 1px solid  $offGray;
+        width: 50%;
+
+        tbody {
+          th {
+            padding: 3% 4% 0;
+          }
+          .price_name {
+            font-family: $usableFont;
+            color: $buttonColor;
+            text-transform: uppercase;
+          }
+          .price {
+            font-family: $usableFont;
+            color: #0e6141;
+            font-size: 400%;
+          }
+          .month {
+            font-family: $usableFont;
+            color: #0e6141;
+          }
+          .price_description {
+            font-family: $usableFont;
+            font-weight: normal;
+            color: $deepblue;
+          }
+          .plan {
+            font-weight: normal;
+            background-color: #0e6141;
+            border: none;
+            color: $offWhite;
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-family: $usableFont;
+            font-size: 100%;
+            width: auto;
+            height: 40px;
+            &:hover {
+              background-color: $buttonColor;
+            }
+
+          }
+        }
+      }
+    }
+  }//end of #pricing;
+
+
+
+  #plan_list {
+    margin-top: 8%;
+    #inclided_plans {
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      font-family: $usableFont;
+      color: $buttonColor;
+      margin-top: 4%;
+    }
+    .markup {
+      width: 5.5%;
+      margin-top: 1%;
+      margin-left: 47.8%;
+      height: 1px;
+      background: $buttonColor;
+      }
+      #plans {
+        margin-top: 4%;
+        display: flex;
+        justify-content: center;
+        ul {
+
+          align-content: center;
+          li {
+            display: flex;
+            align-content: center;
+            list-style: none;
+            margin: 0;
+            font-family: $usableFont;
+            color: $deepblue;
+          }
+          span {
+            padding-top: 2%;
+          }
+        }
+       }
+      }//end of #plan_list
+
+
+#help {
+        margin-top: 10%;
+        #circle_img {
+          display: flex;
+          justify-content: center;
+        }
+        #need_help {
+          margin-top: 1%;
+          .for_help {
+            text-align: center;
+            display: block;
+            font-size: 30px;
+            font-family: $usableFont;
+            color: $buttonColor;
+          }
+          .markup {
+            width: 5.5%;
+            margin-top: 1%;
+            margin-left: 47.4%;
+            height: 1px;
+            background: $buttonColor;
+          }
+          .description {
+            margin-top: 1%;
+            font-family: $usableFont;
+            color: $deepblue;
+            display: block;
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+        #for_adress {
+          margin-top: 5%;
+          font-family: $usableFont;
+          color: $buttonColor;
+          font-weight: bold;
+          text-align: center;
+        }
+        address a{
+          text-align: center;
+          text-transform: lowercase;
+          font-style: normal;
+          color: $buttonColor;
+          text-decoration: none;
+        }
+  }//end of #plan_list
+
+
+
+
+  #footer_banner {
+    padding-bottom: 3%;
+    margin-top: 10%;
+    background-color: $offGray;
+
+    #banner_button {
+      padding-top: 1%;
+      font-family: $usableFont;
+      .download {
+        background-color: $buttonColor;
+        border: none;
+        color: $offWhite;
+        height: 40px;
+        width: 250px;
+        border-radius: 2px;
+        &:hover {
+          background-color: lighten($buttonColor, 5);
+        }
+      }
+    }
+    #banner_content {
+      padding-top: 5%;
+      padding-bottom: 4%;
+      display: flex;
+      justify-content: space-around;
+    #wrapper {
+
+      .heading {
+        font-size: 30px;
+        font-family: $usableFont;
+        color: $buttonColor;
+      }
+      .description {
+        font-family: $usableFont;
+        color: $deepblue;
+        font-size: 20px;
+       }
+      }
+    }
+}//end of #footer_banner;
+
+
+
+
+#footer_ul{
+  margin-top: 8%;
+  border-bottom: 1px solid $offGray;
+  #address {
+  font-size: 90%;
+  display: flex;
+  justify-content: space-around;
+
+  ul {
+padding-bottom: 5%;
+
+    li {
+      padding-bottom: 2%;
+      font-family: $usableFont;
+      color: $deepblue;
+      list-style-type: none;
+      .footer_names {
+        font-weight: bold;
+        color: $buttonColor;
+      }
+      #footer_logo {
+        font-family: $usableFont;
+        color: $buttonColor;
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+      #mail a{
+        font-family: $usableFont;
+        color: $buttonColor;
+        font-weight: bold;
+      }
+      input {
+        color: $buttonColor;
+        background-color: $offGray;
+        border: none;
+        border-radius: 2px;
+        width: 70%;
+        height: 30px;
+        &::placeholder {
+          color: $buttonColor;
+          font-family: $usableFont;
+          padding-left: 7%;
+          background: url(../images/letterLogo.png) no-repeat right 6% center;
+
+        }
+      }
+  }
+    a {
+      text-decoration: none;
+      color: $deepblue;
+      &:hover {
+        color: complement($deepblue);
+    }
+  }
+ }
+ }
+}//end of #footer_ul;
+
+
+
+#footer_ikons {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  #ikon_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .closing_words {
+      margin-left: 8%;
+    }
+    span {
+      font-family: $usableFont;
+      color: $deepblue;
+      font-size: 14px;
+    }
+    .links {
+      margin-right: 8%;
+      a {
+          height: 30px;
+      }
+    }
+  }
+
+}//end of #footer_icons
+
+.lead-banner2 {
+  @include banner2;
+  display: block;
+}
+
+#features .markup2 {
+    width: 7%;;
+    margin-top: 1%;
+    margin-left: 47%;
+    height: 1px;
+    background: $buttonColor;
+  }
+
+  #team {
+    padding-top: 2%;
+    background: $offGray;
+    .heading {
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      font-family: $usableFont;
+      color: $buttonColor;
+      margin-top: 4%;
+    }
+    .markup2 {
+      width: 5.2%;
+      margin-top: 1%;
+      margin-left: 47.5%;
+      height: 1px;
+      background: $buttonColor;
+    }
+    span.description {
+      margin-top: 2%;
+      font-family: $usableFont;
+      color: $deepblue;
+      display: block;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+#footer_ul #address ul li address {
+  color: $buttonColor;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#members {
+  padding-bottom: 0;
+    background: $offGray;
+  ul {
+    list-style-type: none;
+    padding: 3% 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    span {
+      padding-left: 20%;
+      text-align: left;
+      margin-top: 1%;
+      display: block;
+      }
+      .name {
+        font-family: $usableFont;
+        color: $buttonColor;
+        font-weight: bold;
+    }
+    .job {
+      font-family: $usableFont;
+      color: $deepblue;
+    }
+  }
+  img {
+    width: 60%;
+    border-radius: 2px;
+  }
+}
+
+
+  #footer_banner2 {
+    padding-bottom: 3%;
+    margin-top: 0;
+    background-color: lighten($buttonColor, 10);
+
+    #banner_button {
+      padding-top: 1%;
+      font-family: $usableFont;
+      .download {
+        background-color: $buttonColor;
+        border: none;
+        color: $offWhite;
+        height: 40px;
+        width: 250px;
+        border-radius: 2px;
+        &:hover {
+          background-color: lighten($buttonColor, 5);
+        }
+      }
+    }
+    #banner_content {
+      padding-top: 5%;
+      padding-bottom: 4%;
+      display: flex;
+      justify-content: space-around;
+    #wrapper {
+
+      .heading {
+        font-size: 30px;
+        font-family: $usableFont;
+        color: $offWhite;
+      }
+      .description {
+        font-family: $usableFont;
+        color: $offWhite;
+        font-size: 20px;
+       }
+      }
+    }
+}//end of #footer_banner2;
+
+#navi3 {
+  width: 100%;
+  margin: 0 auto;
+
+  nav {
+    padding: 0;
+    margin: 0;
+    background: $offGray;
+    display: flex;
+    justify-content: space-around;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+    }
+
+    ul.title {
+      flex: 1 1 0;
+    }
+
+    .title {
+      max-width: 380px;
+    }
+
+    ul.sources {
+      flex: 1 1 0;
+    }
+    .sources {
+      max-width: 610px;
+    }
+    li {
+      flex: 1 1 0;
+      text-transform: uppercase;
+    }
+    span.wapik_phone {
+      background: url(../images/phone_logo3.png) no-repeat center left 5%;
+      text-decoration: none;
+      text-align: center;
+      color: $buttonColor;
+      display: block;
+      padding: 10px;
+      font-family: $usableFont;
+    }
+    a.wapik_logo {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 7.5px;
+      border-right: 1px solid $buttonColor;
+      font-family: $usableFont;
+    }
+    a {
+      text-decoration: none;
+      text-align: center;
+      color: $buttonColor;
+      display: block;
+      padding: 10px;
+      font-family: $usableFont;
+      &:hover {
+        background: lighten($buttonColor, 5);
+        border-radius: 2px;
+        color: $offWhite;
+      }
+    }
+  }
+}// end of #navi3;
+
+
+#features2 {
+  display: flex;
+  justify-content: center;
+  background: $offGray;
+  div.heading {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-family: $usableFont;
+    color: $buttonColor;
+    margin-top: 4%;
+  }
+  .markup {
+    width: 11%;
+    margin-top: 1%;
+    margin-left: 46.2%;
+    height: 1px;
+    background: $buttonColor;
+  }
+  span.description {
+    margin-top: 2%;
+    font-family: $usableFont;
+    color: $deepblue;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+  }
+  span.postDescription {
+    font-family: $usableFont;
+    color: $deepblue;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+  }
+}//end of #features2;
+
+
+#pricing2 {
+background: $offGray;
+padding-top: 5%;
+  #for_table {
+    display: flex;
+    justify-content: center;
+    table {
+      background: $offWhite;
+      padding-bottom: 2%;
+      padding-top: 1%;
+      border: 1px solid  #80908060;;
+      width: 50%;
+
+      tbody {
+        th {
+          padding: 3% 4% 0;
+        }
+        .price_name {
+          font-family: $usableFont;
+          color: $buttonColor;
+          text-transform: uppercase;
+        }
+        .price {
+          font-family: $usableFont;
+          color: #0e6141;
+          font-size: 400%;
+        }
+        .month {
+          font-family: $usableFont;
+          color: #0e6141;
+        }
+        .price_description {
+          font-family: $usableFont;
+          font-weight: normal;
+          color: $deepblue;
+        }
+        .plan {
+          font-weight: normal;
+          background-color: #0e6141;
+          border: none;
+          color: $offWhite;
+          border-radius: 2px;
+          text-transform: uppercase;
+          font-family: $usableFont;
+          font-size: 100%;
+          width: auto;
+          height: 40px;
+          &:hover {
+            background-color: $buttonColor;
+          }
+
+        }
+      }
+    }
+  }
+  .tableDescription {
+      font-family: $usableFont;
+      color: $deepblue;
+      display: block;;
+      width: 100%;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      padding-bottom: 5%;
+  }
+}//end of #pricing2
+
+
+#navi4 {
+  width: 100%;
+  margin: 0 auto;
+
+  nav {
+    padding: 0;
+    margin: 0;
+    background: $offWhite;
+    display: flex;
+    justify-content: space-around;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+    }
+
+    ul.title {
+      flex: 1 1 0;
+    }
+
+    .title {
+      max-width: 380px;
+    }
+
+    ul.sources {
+      flex: 1 1 0;
+    }
+    .sources {
+      max-width: 610px;
+    }
+    li {
+      flex: 1 1 0;
+      text-transform: uppercase;
+    }
+    span.wapik_phone {
+      background: url(../images/phone_logo3.png) no-repeat center left 5%;
+      text-decoration: none;
+      text-align: center;
+      color: $buttonColor;
+      display: block;
+      padding: 10px;
+      font-family: $usableFont;
+    }
+    a.wapik_logo {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 7.5px;
+      border-right: 1px solid $buttonColor;
+      font-family: $usableFont;
+    }
+    a {
+      text-decoration: none;
+      text-align: center;
+      color: $buttonColor;
+      display: block;
+      padding: 10px;
+      font-family: $usableFont;
+      &:hover {
+        background: lighten($buttonColor, 5);
+        border-radius: 2px;
+        color: $offWhite;
+      }
+    }
+  }
+}// end of #navi4;
+
+#city_map {
+  img {
+    width: 100%;
+    display: block;
+    padding-bottom: 5%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+#user_info {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  .inputs {
+    ul {
+      li {
+      width: 100%;
+      display: block;
+      text-align: left;
+      margin-top: 4%;
+
+      .submit {
+        text-transform: uppercase;
+        font-family: $usableFont;
+        color: $offWhite;
+        background: $buttonColor;
+        border: none;
+        border-radius: 2px;
+        width: auto;
+        padding-left: 4%;
+        padding-right: 4%;
+        &:hover {
+          background: lighten($buttonColor, 5);
+        }
+      }
+
+      input {
+        color: $buttonColor;
+        border: 1px solid #80908060;
+        font-family: $usableFont;
+        display: block;
+        height: 40px;
+        width: 100%;
+        &::placeholder {
+          padding-left: 2%;
+          color: $buttonColor;
+        }
+      }
+
+      textarea {
+        color: $buttonColor;
+        border: 1px solid #80908060;
+        font-family: $usableFont;
+        width: 99.3%;
+        &::placeholder {
+          padding-top: 2%;
+          padding-left: 2%;
+          color: $buttonColor;
+        }
+      }
+      }
+    }
+  }
+
+  .headQuarters {
+    margin-top: 1.3%;
+    width: 25%;
+    border: 2px dashed #80908060;
+    display: block;
+    height: 220px;
+    margin-left: 4.5%;
+    ul {
+      padding-left: 0;
+      width: 100%;
+      margin-top: 10%;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $buttonColor;
+          font-weight: bold;
+        }
+        img {
+          padding-right: 2%;
+        }
+        display: flex;
+        align-items: flex-start;
+        align-items: center;
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 15%;
+        margin-top: 2%;
+        .head {
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $buttonColor;
+          font-family: $usableFont;
+          font-size: 17px;
+        }
+        span {
+          color: $deepblue;
+          font-family: $usableFont;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}//end of #city_map;
+
+@media screen and (max-width: 840px) {
+
+#for_phone #phone_description .for_image img {
+  width: 400px;
+}
+#plan_list #plans ul li img {
+  width: 15%;
+  height: 15%;
+}
+  }
+
+
+@media screen and (max-width: 768px) {
+
+  #navi {
+    width: 100%;
+    margin: 0 auto;
+    a.burger-nav {
+      padding-top: 1%;
+      padding-bottom: 0;
+      display: block;
+      height: 30px;
+      width: 100%;
+      background: url(../images/menu.png) no-repeat 98% center;
+      background-color: $deepblue;
+      cursor: pointer;
+    }
+
+    nav {
+      margin-top: 0;
+      padding-top: 0;
+      width: 100%;
+      align-items: center;
+      ul {
+          margin-top: 0;
+          display: block;
+          overflow: hidden;
+          height: 0;
+      li {
+        a {
+          text-align: center;
+          display: block;
+          width: 100%;
+        }
+        a.wapik_logo {
+          border: none;
+        }
+        span {
+          text-align: center;
+          display:block;
+        }
+        span.wapik_phone {
+              background: url(../images/phone_logo.png) no-repeat center left 20%;;
+          }
+        }
+      }
+      ul.title {
+        border-right: 1px solid $offGray;
+      }
+      ul.open {
+        height: auto;
+      }
+  }
+}// end of nav;
+
+#navi3 {
+  width: 100%;
+  margin: 0 auto;
+  a.burger-nav {
+    padding-top: 1%;
+    padding-bottom: 0;
+    display: block;
+    height: 30px;
+    width: 100%;
+    background: url(../images/menu.png) no-repeat 98% center;
+    background-color: $offGray;
+    cursor: pointer;
+  }
+
+  nav {
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    align-items: center;
+    ul {
+        margin-top: 0;
+        display: block;
+        overflow: hidden;
+        height: 0;
+    li {
+      a {
+        text-align: center;
+        display: block;
+        width: 100%;
+      }
+      a.wapik_logo {
+        border: none;
+      }
+      span {
+        text-align: center;
+        display:block;
+      }
+      span.wapik_phone {
+            background: url(../images/phone_logo3.png) no-repeat center left 20%;;
+        }
+      }
+    }
+    ul.title {
+      border-right: 1px solid $offGray;
+    }
+    ul.open {
+      height: auto;
+    }
+}
+}// end of nav3;
+
+#navi4 {
+  width: 100%;
+  margin: 0 auto;
+  a.burger-nav {
+    padding-top: 1%;
+    padding-bottom: 0;
+    display: block;
+    height: 30px;
+    width: 100%;
+    background: url(../images/menu.png) no-repeat 98% center;
+    background-color: $offWhite;
+    cursor: pointer;
+  }
+
+  nav {
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    align-items: center;
+    ul {
+        margin-top: 0;
+        display: block;
+        overflow: hidden;
+        height: 0;
+    li {
+      a {
+        text-align: center;
+        display: block;
+        width: 100%;
+      }
+      a.wapik_logo {
+        border: none;
+      }
+      span {
+        text-align: center;
+        display:block;
+      }
+      span.wapik_phone {
+            background: url(../images/phone_logo3.png) no-repeat center left 20%;;
+        }
+      }
+    }
+    ul.title {
+      border-right: 1px solid $offGray;
+    }
+    ul.open {
+      height: auto;
+    }
+}
+}// end of navi4;
+
+
+
+.lead-banner {
+  @include tabletBanner;
+
+}//end of #lead-banner;
+
+.lead-banner2 {
+  @include tabletBanner;
+}//end of #tabletBanner;
+
+#features_icons {
+  display: flex;
+  justify-content: center;
+  ul {
+  display: block;
+  }
+}//end of features_icons;
+
+#sub_icons{
+  display: block;
+  #opportunityes_icons{
+    display: block;
+    ul {
+      text-align: left;
+      li {
+        a {
+          text-align: center;
+        }
+      }
+    }
+  }
+}//end of #sub_icons;
+
+#for_phone #phone_description #pointer ul li img {
+  width: 4.5%;
+  height: 4.5%;
+}
+
+#for_phone #phone_description #pointer ul li .heading, .description {
+  width: 100%;
+  text-align: center;
+}
+
+#for_phone #phone_description #pointer ul {
+  padding-left: 1%;
+}
+
+
+#for_phone {
+  text-align: center;
+  #phone_description {
+    display: block;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 2%;
+    #pointer {
+      ul {
+        li {
+          .description {
+            padding-bottom: 2%;
+          }
+        }
+      }
+    }
+   }
+ }//end of #forphone;
+
+#valeria {
+    text-align: center;
+    align-items: center;
+  #valeria_words {
+    display: block;
+    #valeria_info {
+      margin-left: 0;
+    }
+    #valeria_photo {
+      margin-top: 5%;
+      margin-left: 7%;
+      display: flex;
+      align-items: center;
+      img {}
+    }
+  }
+}// end of #valeria;
+
+#valeria #valeria_words #valeria_info span.valeria_description  {
+  width: 100%;
+  text-align: center;
+}
+
+#valeria #valeria_words {
+  padding-left: 0;
+}
+
+#planet #planet_description #details .heading  {
+  width: 100%;
+  text-align: center;
+}
+
+#planet {
+  padding-top: 0.1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 0;
+  #planet_description {
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    #earth_picture {
+    }
+  }
+}//end of #planet;
+
+#plan_list #plans {
+  margin: 0;
+  padding: 0;
+  display: block;
+  align-items: center;
+  width: 100%;
+  ul {
+  align-items: center;
+  padding-left: 0;
+      span {
+        text-align: left;
+      }
+    li {
+      padding-left: 0;
+      margin-left: 0;
+      width: 100%;
+      display: block;
+      text-align: center;
+      padding-top: 2%;
+      img {
+        display: none;
+      }
+    }
+  }
+}//end of #plans;
+
+#pricing #for_table table tbody th {
+  padding-left: 0;
+  padding-right: 1%;
+}
+
+#pricing2 #for_table table tbody th {
+  padding-left: 0;;
+  padding-right: 1%;
+}
+
+#footer_banner {
+
+  #banner_content {
+    display: block;
+    #wrapper {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    #banner_button {
+      margin-top: 2%;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}//end of #footer_banner;
+
+
+#footer_banner2 {
+
+  #banner_content {
+    display: block;
+    #wrapper {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    #banner_button {
+      margin-top: 2%;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}//end of #footer_banner2;
+
+#footer_ul #address ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#footer_ul #address {
+  display: block;
+}
+
+#footer_ul #address ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#footer_ul #address ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#navi nav ul li span.wapik_phone {
+  background: url(../images/phone_logo.png) no-repeat center left 20%;
+}
+
+#navi3 nav ul li span.wapik_phone {
+  background: url(../images/phone_logo3.png) no-repeat center left 20%;
+}
+
+#navi4 nav ul li span.wapik_phone {
+  background: url(../images/phone_logo3.png) no-repeat center left 20%;
+}
+
+#members {
+  display: flex;
+  align-content: center;
+}
+
+#members ul {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+}
+#members ul li {
+    padding-top: 1%;
+    margin: 0;
+    padding-left: 20%;
+    padding-right: 0;
+    align-items: center;
+  }
+  #members ul li .name {
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+#members img {
+  width: 60%;
+}
+#members ul li {
+  width: 60%;
+}
+
+#user_info {
+  display: block;
+}
+
+#user_info .inputs {
+  margin-left: 22%;
+  display: block;
+  width: 50%;
+}
+#user_info .inputs ul li .submit {
+  margin-left: 30%;
+}
+
+#user_info .headQuarters {
+  display: block;
+  width: 50%;
+  margin-left: 26%;
+}
+
+
+}//end of 768px;
+
+@media screen and (max-width: 567px) {
+  #navi nav ul li span.wapik_phone {
+    background: url(../images/phone_logo.png) no-repeat center left 15%;
+  }
+
+  #navi3 nav ul li span.wapik_phone {
+    background: url(../images/phone_logo3.png) no-repeat center left 15%;
+  }
+
+  #navi4 nav ul li span.wapik_phone {
+    background: url(../images/phone_logo3.png) no-repeat center left 15%;
+  }
+
+  #user_info .inputs ul li .submit {
+    margin-left: 10%;
+  }
+
+  #user_info .inputs ul li .submit {
+    margin-left: 0;
+    padding-left: 1%;
+  }
+
+}//end of 567px;
+
+
+@media screen and (max-width: 482px) {
+  .lead-banner {
+    @include mobileBanner;
+  }
+  .lead-banner2 {
+    @include mobileBanner;
+  }
+
+#footer_banner #banner_content #banner_button {
+  margin-top: 2%;
+}
+
+#footer_banner2 #banner_content #banner_button {
+  margin-top: 2%;
+}
+
+#footer_ikons #ikon_content {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#footer_ikons #ikon_content .links {
+  margin-top: 2%;
+}
+
+#footer_ikons #ikon_content .closing_words {
+  margin-left: 0;
+}
+
+#footer_ikons #ikon_content .links {
+  margin-right: 0;
+}
+
+#navi nav ul li span.wapik_phone {
+  background: url(../images/phone_logo.png) no-repeat center left 10%;
+}
+
+#navi3 nav ul li span.wapik_phone {
+  background: url(../images/phone_logo3.png) no-repeat center left 10%;
+}
+
+#navi4 nav ul li span.wapik_phone {
+  background: url(../images/phone_logo3.png) no-repeat center left 10%;
+}
+
+
+
+.lead-banner2 .banner-content .wrapper span {
+  font-size: 30px;
+}
+
+.lead-banner2 .banner-content .wrapper input {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#pricing #for_table {
+  font-size: 70%;
+}
+
+#pricing2 {
+
+  #for_table {
+  font-size: 70%;;
+  }
+}
+
+#user_info .inputs {
+  width: 98%;
+  margin-left: 0;
+  padding-left: 0;
+}
+#user_info .inputs ul {
+  margin-left: 1%;
+  padding-left: 0;
+}
+
+#user_info .headQuarters {
+  width: 70%;
+  margin-left: 15%;
+}
+
+#user_info .headQuarters ul li {
+  margin-left: 0;
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  text-align: center;
+}
+
+#user_info .inputs ul li .submit {
+  margin-left: 1%;
+}
+
+}//end of 480px;
+
+@media screen and (max-width: 460px) {
+  .lead-banner .banner-content .wrapper span {
+    font-size: 20px;;
+  }
+
+  .lead-banner .banner-content .wrapper input {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
